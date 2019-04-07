@@ -28,13 +28,23 @@
   </div>
 </nav>
     <div class="container"><br><br>
-      <h1 style="font-family: 'Kanit'">ค่าธรรมเนียมเอกสารทั้งหมด 10.00 บาท</h1><hr>
-      <p>ประเภทคำร้อง : คำร้องขอปพ. 1</p>
-      <p>ผู้จ่าย : นายฉอฉิ่ง สุดเฉียบ 04452</p><br>
-      <div class="float-right">
-        <button type="button" class="btn btn-primary" onclick="pay()">จ่ายเลย</button>
-        <a href="studenthome.html"><button type="button" class="btn btn-secondary">เสร็จสิ้น</button></a>
-      </div><br><br><hr>
+      <div class="card">
+        <div class="card-header">
+            <h1 style="font-family: 'Kanit'">ค่าธรรมเนียมเอกสารทั้งหมด 10.00 บาท</h1><hr>
+        </div>
+        <div class="card-body">
+            <p>ประเภทคำร้อง : คำร้องขอปพ. 1</p>
+            <p>ผู้จ่าย : นายฉอฉิ่ง สุดเฉียบ 04452</p><br>
+        </div>
+        <div class="card-footer">
+            <div class="float-right">
+                <button type="button" class="btn btn-primary" onclick="pay()">จ่ายเลย</button>
+                <a href="studenthome.html"><button type="button" class="btn btn-secondary">เสร็จสิ้น</button></a>
+              </div>
+        </div>
+      </div>
+      
+      <hr>
       <div class="float-light" style="display: none" id="pay">
         <button type="button" class="btn btn-warning" onclick="Trueopen()">True Money Wallet</button>
         <button type="button" class="btn btn-dark" onclick="payopen()">Promt Pay</button>
