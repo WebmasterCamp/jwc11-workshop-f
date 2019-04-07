@@ -6,3 +6,12 @@ nav {
 nav a {
   color: #fff !important;
 }
+
+.link {
+  text-decoration: none !important;
+  color: #212529;
+}
+
+.link:hover {
+  color: black;
+}
