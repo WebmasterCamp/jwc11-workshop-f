@@ -8,10 +8,11 @@
     <title>Approval Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
 
 </head>
 
-<body>
+<body style="font-family: 'Sarabun', sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Name</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -41,7 +42,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-2">
-                        เรื่อง
+                        หัวเรื่อง
                     </div>
                     <div class="col-lg-10">
                         ขอใบรับรองผลการศึกษา (ปพ.7)
@@ -80,19 +81,13 @@
                         บิดาชื่อ
                     </div>
                     <div class="col-lg-10">
-                        นายสมาธิ
+                        นายสมาธิ อร่อยดี
                     </div>
                     <div class="col-lg-2">
-                        อร่อยดี
-                    </div>
-                    <div class="col-lg-10">
                         มารดาชื่อ
                     </div>
-                    <div class="col-lg-2">
-                        นางสมพร
-                    </div>
                     <div class="col-lg-10">
-                        อร่อยดี
+                        นางสมพร อร่อยดี
                     </div>
                     <div class="col-lg-2">
                         จำนวน
@@ -111,9 +106,55 @@
         </div>
         <br>
         <div class="float-right">
-            <a href="#" class="btn btn-secondary">ส่งคืน</a>
-            <a href="#" class="btn btn-success">ยืนยัน</a>
+            <button type="button" class="btn btn-secondary" data-target="#reject" data-toggle="modal">ส่งคืน</button>
+            <button type="button" class="btn btn-success" data-target="#confirm" data-toggle="modal">ยืนยัน</button>
         </div>
+
+        <div class="modal fade" id="reject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">ส่งเอกสารกลับ</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-danger">
+                            ยืนยันการตีกลับเอกสาร
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                        <a href="teacherhome.html" class="btn btn-danger">ยืนยัน</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ยืนยัน</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ยืนยันการรับเอกสาร
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+                    <a href="teacherhome.html" class="btn btn-success">ยืนยัน</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
