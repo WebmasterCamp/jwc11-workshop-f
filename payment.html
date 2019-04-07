@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </header>
-<body>
+<body style="font-family: 'Sarabun'">
   <nav class="navbar navbar-expand-lg navbar-light" style="background: #faf3dd; font-family: 'Kanit'">
   <a class="navbar-brand" href="#"><img src="assets/logo.png" height="40"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +29,67 @@
     </ul>
   </div>
 </nav>
-    <div class="container"><br>
-      <h1>ค่าธรรมเนียมเอกสารทั้งหมด 10.00 บาท</h1><hr>
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-secondary">Secondary</button>
+    <div class="container"><br><br>
+      <h1 style="font-family: 'Kanit'">ค่าธรรมเนียมเอกสารทั้งหมด 10.00 บาท</h1><hr>
+      <p>ประเภทคำร้อง : คำร้องขอปพ. 1</p>
+      <p>ผู้จ่าย : นายฉอฉิ่ง สุดเฉียบ 04452</p><br>
+      <div class="float-right">
+        <button type="button" class="btn btn-primary">จ่ายเลย</button>
+        <button type="button" class="btn btn-secondary">เสร็จสิ้น</button>
+      </div><br><br><hr>
+      <div class="float-light">
+        <button type="button" class="btn btn-warning" onclick="Trueopen()">True Money Wallet</button>
+        <button type="button" class="btn btn-dark" onclick="payopen()">Promt Pay</button>
+      </div><br><br>
+      <div class="card" id="truemoney">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2">
+              <img src="assets/truemoney.png" width="150">
+            </div>
+            <div class="col-10">
+              <div class="form-group">
+            <label for="exampleInputEmail1">หมายเลขโทรศัพท์</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="หมายเลขโทรศัพท์">
+            <small id="emailHelp" class="form-text text-muted">กรุณาใส่เบอร์โทรศัพท์ของคุณ้พื่อโอนเงินเข้าสู่บัญชีโรงเรียน</small>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="card" id="promptpay">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2">
+              <img src="assets/PromptPay.jpg" width="150">
+            </div>
+            <div class="col-10">
+              <div class="form-group">
+            <label for="exampleInputEmail1">หมายเลขโทรศัพท์</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="หมายเลขโทรศัพท์">
+            <small id="emailHelp" class="form-text text-muted">กรุณาใส่เบอร์โทรศัพท์ของคุณ้พื่อโอนเงินเข้าสู่บัญชีโรงเรียน</small>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+<script>
+  function Trueopen() {
+  var x = document.getElementById("truemoney");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function payopen() {
+var x = document.getElementById("promptpay");
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+}
+</script>
 </body>
