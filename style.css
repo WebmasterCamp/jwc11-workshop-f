@@ -3,6 +3,6 @@ nav {
   background: #576574;
 }
 
-nav: a {
-  color: #fff;
+nav a {
+  color: #fff !important;
 }
