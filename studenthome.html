@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <header>
+  <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
   <link rel="stylesheet" href="studenthome.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -7,9 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </header>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Name</a>
+<body style="font-family: 'Sarabun', sans-serif;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background: #faf3dd">
+  <a class="navbar-brand" href="#"><img src="assets/logo.png" height="40"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -30,23 +32,26 @@
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<div class="container">
+<div class="container" style="font-family: 'Kanit'">
   <h2>Name Surname</h2>
   <p>aaaaaaaaaaaaaaaaaaaaaaaa</p>
 </div>
 </div><br>
-<h1 style="text-align: center">สร้างเอกสาร</h1><hr><br>
+<h1 style="text-align: center; font-family: 'Kanit'">สร้างเอกสาร</h1><hr><br>
 <div class="container">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="assets/bhorphor1.png" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="assets/bhorphor7.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="assets/la.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/lasick.png" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -59,25 +64,22 @@
   </a>
 </div>
 </div><br><br>
-<h1 style="text-align: center">สถานะเอกสาร</h1><hr><br>
+<h1 style="text-align: center; font-family: 'Kanit'">สถานะเอกสาร</h1><hr><br>
 <div class="container">
-  <div class="card" style="text-align: center">
+  <div class="card" style="text-align: center; background: #cecece">
     <div class="card-body">
       <div class="row">
         <div class="col-1">
-          <h6>No.</h6>
+          <h6><b>No.</b></h6>
         </div>
-        <div class="col-4">
-          <h6>ชื่อ-นามสกุล</h6>
+        <div class="col-5">
+          <h6><b>หมายเหตุ</b></h6>
         </div>
         <div class="col-3">
-          <h6>หมายเหตุ</h6>
+          <h6><b>ผู้รับรอง</b></h6>
         </div>
-        <div class="col-2">
-          <h6>ผู้รับรอง</h6>
-        </div>
-        <div class="col-2">
-          <h6>สถานะ</h6>
+        <div class="col-3">
+          <h6><b>สถานะ</b></h6>
         </div>
       </div>
     </div>
@@ -88,17 +90,14 @@
         <div class="col-1">
           <h6>1.</h6>
         </div>
-        <div class="col-4">
-          <h6>นายฉอฉิ่ง สุดเฉียบ</h6>
-        </div>
-        <div class="col-3">
+        <div class="col-5">
           <h6></h6>
         </div>
-        <div class="col-2">
+        <div class="col-3">
           <h6>ผอ.เฉียบเฉียบ</h6>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-secondary btn-sm btn-block">รอรับคำขอ</button>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-block" style="background: #a3c4bc">รอรับคำขอ</button>
         </div>
       </div>
     </div>
@@ -109,17 +108,14 @@
         <div class="col-1">
           <h6>2.</h6>
         </div>
-        <div class="col-4">
-          <h6>นายฉอฉิ่ง สุดเฉียบ</h6>
-        </div>
-        <div class="col-3">
+        <div class="col-5">
           <h6></h6>
         </div>
-        <div class="col-2">
+        <div class="col-3">
           <h6>ผอ.เฉียบเฉียบ</h6>
         </div>
-        <div class="col-2">
-          <h6>ได้รับคำขอแล้ว</h6>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-block" style="background: #fff381">รับคำขอแล้ว</button>
         </div>
       </div>
     </div>
@@ -130,17 +126,14 @@
         <div class="col-1">
           <h6>3.</h6>
         </div>
-        <div class="col-4">
-          <h6>นางสาวฉิ่งฉับ เฉียบสุด</h6>
-        </div>
-        <div class="col-3">
+        <div class="col-5">
           <h6></h6>
         </div>
-        <div class="col-2">
+        <div class="col-3">
           <h6>ครูฉิ่ง อิอิ</h6>
         </div>
-        <div class="col-2">
-          <h6>เสร็จสิ้น</h6>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-block" style="background: #d1efb5">เสร็จสิ้น</button>
         </div>
       </div>
     </div>
@@ -151,17 +144,14 @@
         <div class="col-1">
           <h6>4.</h6>
         </div>
-        <div class="col-4">
-          <h6>นายฉอฉิ่ง สุดเฉียบ</h6>
-        </div>
-        <div class="col-3">
+        <div class="col-5">
           <h6>ไม่ชำระค่าธรรมเนียมเกินเวลาที่กำหนด</h6>
         </div>
-        <div class="col-2">
+        <div class="col-3">
           <h6>ผอ.เฉียบเฉียบ</h6>
         </div>
-        <div class="col-2">
-          <h6>สถานะ</h6>
+        <div class="col-3">
+          <button type="button" class="btn btn-sm btn-block" style="background: #dc755e">ส่งคืน</button>
         </div>
       </div>
     </div>
@@ -178,5 +168,5 @@ function closeNav() {
 document.getElementById("mySidenav").style.width = "0";
 document.getElementById("main").style.marginLeft= "0";
 }
-</script>
+</script><br><br>
 </body>
