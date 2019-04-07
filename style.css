@@ -22,3 +22,7 @@ body {
   background-size: cover;
   /* background-blend-mode: lighten; */
 }
+
+.card-header {
+  background: #ffb93a !important;
+}
