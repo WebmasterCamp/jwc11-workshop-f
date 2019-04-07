@@ -80,16 +80,21 @@
   var x = document.getElementById("truemoney");
   if (x.style.display === "none") {
     x.style.display = "block";
+    document.getElementById("promptpay").style.display = "none";
   } else {
     x.style.display = "none";
+    document.getElementById("truemoney").style.display = "block";
+    
   }
 }
 function payopen() {
 var x = document.getElementById("promptpay");
 if (x.style.display === "none") {
   x.style.display = "block";
+  document.getElementById("truemoney").style.display = "none";
 } else {
   x.style.display = "none";
+  document.getElementById("promptpay").style.display = "block";
 }
 }
 
