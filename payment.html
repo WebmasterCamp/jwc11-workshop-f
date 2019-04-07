@@ -34,14 +34,14 @@
       <p>ประเภทคำร้อง : คำร้องขอปพ. 1</p>
       <p>ผู้จ่าย : นายฉอฉิ่ง สุดเฉียบ 04452</p><br>
       <div class="float-right">
-        <button type="button" class="btn btn-primary">จ่ายเลย</button>
+        <button type="button" class="btn btn-primary" onclick="pay()">จ่ายเลย</button>
         <button type="button" class="btn btn-secondary">เสร็จสิ้น</button>
       </div><br><br><hr>
-      <div class="float-light">
+      <div class="float-light" style="display: none" id="pay">
         <button type="button" class="btn btn-warning" onclick="Trueopen()">True Money Wallet</button>
         <button type="button" class="btn btn-dark" onclick="payopen()">Promt Pay</button>
       </div><br><br>
-      <div class="card" id="truemoney">
+      <div class="card" id="truemoney" style="display: none">
         <div class="card-body">
           <div class="row">
             <div class="col-2">
@@ -52,12 +52,13 @@
             <label for="exampleInputEmail1">หมายเลขโทรศัพท์</label>
             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="หมายเลขโทรศัพท์">
             <small id="emailHelp" class="form-text text-muted">กรุณาใส่เบอร์โทรศัพท์ของคุณ้พื่อโอนเงินเข้าสู่บัญชีโรงเรียน</small>
+            <button type="button" class="btn btn-success" style="float: right">ยืนยัน</button>
           </div>
             </div>
           </div>
         </div>
       </div><br>
-      <div class="card" id="promptpay">
+      <div class="card" id="promptpay" style="display: none">
         <div class="card-body">
           <div class="row">
             <div class="col-2">
@@ -68,6 +69,7 @@
             <label for="exampleInputEmail1">หมายเลขโทรศัพท์</label>
             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="หมายเลขโทรศัพท์">
             <small id="emailHelp" class="form-text text-muted">กรุณาใส่เบอร์โทรศัพท์ของคุณ้พื่อโอนเงินเข้าสู่บัญชีโรงเรียน</small>
+            <button type="button" class="btn btn-success" style="float: right">ยืนยัน</button>
           </div>
             </div>
           </div>
@@ -85,6 +87,15 @@
 }
 function payopen() {
 var x = document.getElementById("promptpay");
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+}
+
+function pay() {
+var x = document.getElementById("pay");
 if (x.style.display === "none") {
   x.style.display = "block";
 } else {
