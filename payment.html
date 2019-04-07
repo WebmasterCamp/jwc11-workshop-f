@@ -36,7 +36,7 @@
       <p>ผู้จ่าย : นายฉอฉิ่ง สุดเฉียบ 04452</p><br>
       <div class="float-right">
         <button type="button" class="btn btn-primary" onclick="pay()">จ่ายเลย</button>
-        <button type="button" class="btn btn-secondary">เสร็จสิ้น</button>
+        <a href="studenthome.html"><button type="button" class="btn btn-secondary">เสร็จสิ้น</button></a>
       </div><br><br><hr>
       <div class="float-light" style="display: none" id="pay">
         <button type="button" class="btn btn-warning" onclick="Trueopen()">True Money Wallet</button>
@@ -53,17 +53,18 @@
             <label for="exampleInputEmail1">หมายเลขโทรศัพท์</label>
             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="หมายเลขโทรศัพท์">
             <small id="emailHelp" class="form-text text-muted">กรุณาใส่เบอร์โทรศัพท์ของคุณ้พื่อโอนเงินเข้าสู่บัญชีโรงเรียน</small>
-            <button type="button" class="btn btn-success" style="float: right">ยืนยัน</button>
+            <a href="studenthome.html"><button type="button" class="btn btn-success" style="float: right">ยืนยัน</button></a>
           </div>
             </div>
           </div>
         </div>
       </div><br>
-      <div class="card" id="promptpay" style="width: 20%;">
+      <div class="card" id="promptpay" style="width: 20%; display: none">
         <img src="assets/payqr.jpg" class="card-img-top">
         <div class="card-body">
           <img src="assets/PromptPay.jpg" width="80">
           <p class="card-text">ชำระเงินด้วย QR code</p>
+          <a href="studenthome.html"><button type="button" class="btn btn-success btn-block">ยืนยัน</button></a>
         </div>
       </div>
     </div>
